@@ -196,19 +196,20 @@ body {
   object-fit: contain;
 }
 
-/* ========== NUTRITION SECTION ========== */
-
 .nutrition-section {
   background: #F8F8F8;
   padding: 80px 0;
 }
 
-.nutrition-container {
-  width: 1200px;
+.nutrition-frame {
+  width: 1920px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   gap: 30px;
+  padding: 80px 0;
   align-items: center;
+  justify-content: center;
 }
 
 .nutrition-content {
@@ -220,10 +221,8 @@ body {
 }
 
 /* Frame 1171276417 */
-
-.nutrition-text {
+.nutrition-header {
   width: 538px;
-  height: 184px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -243,46 +242,87 @@ body {
   width: 538px;
   height: 72px;
   font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #424153;
+}
+.keypoints-frame {
+  width: 538px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.keypoints-title {
+  width: 538px;
+  height: 29px;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #161723;
+}
+
+.keypoints-list {
+  width: 538px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.keypoint-row {
+  width: 538px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.keypoint-percent {
+  height: 50px;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.25px;
+  color: #EE6F4B;
+}
+
+.keypoint-text {
+  height: 48px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.5px;
   color: #424153;
 }
 
-/* Key Points */
+/* EXACT FIGMA WIDTHS */
 
-.key-points {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+/* Row 1 */
+.p-97 { width: 67px; }
+.t-97 { width: 423px; }
+
+/* Row 2 */
+.p-84 { width: 70px; }
+.t-84 { width: 420px; }
+
+/* Row 3 */
+.p-92 { width: 69px; }
+.t-92 { width: 421px; }
+
+.keypoint-divider {
+  width: 538px;
+  height: 1px;
+  background: #E3E3E8;
 }
 
-.key-point {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-}
 
-.key-percent {
-  font-size: 20px;
-  font-weight: 600;
-  color: #EE6F4B;
-  min-width: 48px;
-}
-
-.key-point p {
-  font-size: 14px;
-  line-height: 150%;
-  color: #424153;
-}
-
-/* Nutrition CTA */
-
+/* CTA */
 .nutrition-cta {
   width: fit-content;
   padding: 12px 24px;
   background: #EE6F4B;
-  color: #ffffff;
+  color: #FFFFFF;
   border: none;
   border-radius: 6px;
   font-size: 14px;
@@ -290,8 +330,9 @@ body {
   cursor: pointer;
 }
 
+/* Image */
 .nutrition-image img {
-  max-width: 100%;
-  height: auto;
+  width: auto;
+  max-height: 571px;
   display: block;
 }
