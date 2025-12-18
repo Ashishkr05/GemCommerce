@@ -10,7 +10,6 @@ body {
   background: #ffffff;
 }
 
-/* SECTION */
 .feature-section {
   padding: 80px 0;
 }
@@ -21,11 +20,9 @@ body {
   text-align: center;
 }
 
-/* TITLE (EXACT FIGMA) */
 .section-title {
   max-width: 536px;
   margin: 0 auto 48px;
-
   font-size: 40px;
   font-weight: 600;
   line-height: 120%;
@@ -33,65 +30,60 @@ body {
   color: #161723;
 }
 
-/* MAIN FRAME */
 .feature-grid {
   display: grid;
   grid-template-columns: auto 370px auto;
   align-items: center;
-  gap: 30px; /* FIGMA */
+  gap: 30px;
 }
 
-/* FEATURE COLUMNS */
 .features-column {
   display: flex;
   flex-direction: column;
-  gap: 80px; /* FIGMA */
+  gap: 80px;
+  text-align: left;
 }
 
-/* FEATURE ITEM (1171276391) */
 .feature-item {
   display: flex;
   align-items: flex-start;
-  gap: 24px; /* FIGMA */
+  gap: 24px;
   max-width: 370px;
 }
 
-/* ICON BACKGROUND */
 .icon {
   width: 60px;
   height: 60px;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-shrink: 0;
 }
 
 .icon img {
-  width: 28px;
-  height: 28px;
+  width: 60px;
+  height: 60px;
+  display: block;
 }
 
-/* FIGMA COLORS */
-.icon.green { background: #DCF9CA; }
-.icon.yellow { background: #F8F1D9; }
-.icon.teal { background: #D9F6F0; }
-.icon.peach { background: #FAD6C9; }
+.feature-text {
+  max-width: 286px;
+}
 
-/* TEXT */
 .feature-text h3 {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #161723;
   margin-bottom: 8px;
 }
 
 .feature-text p {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 150%;
+  letter-spacing: 0.5px;
   color: #424153;
 }
 
-/* CENTER IMAGE */
 .comparison-wrapper {
   display: flex;
   justify-content: center;
@@ -111,7 +103,6 @@ body {
   object-fit: cover;
 }
 
-/* DIVIDER */
 .divider {
   position: absolute;
   top: 0;
@@ -122,7 +113,6 @@ body {
   transform: translateX(-50%);
 }
 
-/* CENTER CIRCLE */
 .center-circle {
   position: absolute;
   top: 50%;
@@ -137,7 +127,6 @@ body {
   justify-content: center;
 }
 
-/* ARROW */
 .arrow {
   width: 6px;
   height: 6px;
@@ -146,7 +135,6 @@ body {
   transform: rotate(45deg);
 }
 
-/* CTA */
 .cta-button {
   margin-top: 48px;
   padding: 14px 24px;
@@ -159,7 +147,6 @@ body {
   cursor: pointer;
 }
 
-/* TRUST */
 .trust-row {
   margin-top: 16px;
   font-size: 12px;
