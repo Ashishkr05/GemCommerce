@@ -201,17 +201,15 @@ body {
   padding: 80px 0;
 }
 
-.nutrition-frame {
-  width: 1920px;
-  max-width: 100%;
+.nutrition-container {
+  width: 1200px;
   margin: 0 auto;
   display: flex;
   gap: 30px;
-  padding: 80px 0;
   align-items: center;
-  justify-content: center;
 }
 
+/* LEFT COLUMN */
 .nutrition-content {
   width: 570px;
   padding-right: 32px;
@@ -220,8 +218,8 @@ body {
   gap: 48px;
 }
 
-/* Frame 1171276417 */
-.nutrition-header {
+/* TEXT BLOCK */
+.nutrition-text {
   width: 538px;
   display: flex;
   flex-direction: column;
@@ -246,7 +244,12 @@ body {
   letter-spacing: 0.5px;
   color: #424153;
 }
-.keypoints-frame {
+
+/* =======================
+   KEY POINTS
+======================= */
+
+.keypoints-wrapper {
   width: 538px;
   display: flex;
   flex-direction: column;
@@ -263,23 +266,23 @@ body {
   color: #161723;
 }
 
-.keypoints-list {
-  width: 538px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
+/* ROW BASE */
 .keypoint-row {
   width: 538px;
-  height: 50px;
   display: flex;
-  align-items: center;
   gap: 48px;
+  align-items: flex-start;
 }
 
-.keypoint-percent {
-  height: 50px;
+/* DIVIDER */
+.divider-line {
+  width: 538px;
+  height: 1px;
+  background: #E3E3E8;
+}
+
+/* PERCENTAGES */
+.key-percent {
   font-size: 33px;
   font-weight: 700;
   line-height: 150%;
@@ -287,52 +290,49 @@ body {
   color: #EE6F4B;
 }
 
-.keypoint-text {
-  height: 48px;
+/* EXACT WIDTHS */
+.percent-97 { width: 67px; height: 50px; }
+.percent-84 { width: 70px; height: 50px; }
+.percent-92 { width: 69px; height: 50px; }
+
+/* TEXT BLOCKS */
+.key-text {
   font-size: 16px;
-  font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.5px;
   color: #424153;
 }
 
-/* EXACT FIGMA WIDTHS */
+/* EXACT TEXT WIDTHS */
+.text-97 { width: 423px; height: 48px; }
+.text-84 { width: 420px; height: 48px; }
+.text-92 { width: 421px; height: 48px; }
 
-/* Row 1 */
-.p-97 { width: 67px; }
-.t-97 { width: 423px; }
+/* =======================
+   CTA
+======================= */
 
-/* Row 2 */
-.p-84 { width: 70px; }
-.t-84 { width: 420px; }
-
-/* Row 3 */
-.p-92 { width: 69px; }
-.t-92 { width: 421px; }
-
-.keypoint-divider {
-  width: 538px;
-  height: 1px;
-  background: #E3E3E8;
-}
-
-
-/* CTA */
 .nutrition-cta {
-  width: fit-content;
-  padding: 12px 24px;
+  width: 538px;
+  height: 48px;
+  padding: 12px 40px;
   background: #EE6F4B;
   color: #FFFFFF;
   border: none;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
 }
 
-/* Image */
+/* =======================
+   IMAGE
+======================= */
+
 .nutrition-image img {
-  width: auto;
-  max-height: 571px;
+  width: 570px;
+  height: 570px;
+  border-radius: 10px;
+  object-fit: cover;
   display: block;
 }
